@@ -29,9 +29,26 @@ The system is designed with a relational database using SQL. Key entities includ
 
 - **Transaction** (Trans_ID, Date, Total_Cost, Emp_ID, Store_No)
 
+# Acknowledgements
+This project was developed as part of IS 475. Special thanks to the team for their contributions:
+- Anabel Aguilar
+- Benjamin Oliphant
+- Meagan Timmons
+
+# Further Exploration
+This segment further explores the DBMS using MySQL, Python, and data visualization tools. The goal is to query, clean, and visualize data efficiently and
+compile graphs into a PDF report. 
+
+# Highlights
+- Connected to a local MySQL server using the MySQL extention in VSCode.
+- Queried data into Pandas DataFrames for analysis and visualization.
+- Performed data cleaning to prepare datasets for visualization.
+- Created visualizations using Matplotlib.
+- Compiled graphs and results into a PDF report using FPDF.
+
 
 # Sample Queries
-Outputs the most popular service by year
+**Outputs the most popular service by year**
 ```
 SELECT 
     YEAR(t.Date) AS Year, 
@@ -43,31 +60,6 @@ JOIN SERVICE s ON ts.Service_ID = s.Service_ID
 GROUP BY YEAR(t.Date), s.Wash_Type
 ORDER BY Year, Times_Bought DESC;
 ```
-Outputs a breakdown of monthly revenue
-```
-SELECT 
-    YEAR(t.Date) AS Year, 
-    MONTH(t.Date) AS Month, 
-    SUM(t.Total_Cost) AS Monthly_Revenue
-FROM `TRANSACTION` t
-GROUP BY YEAR(t.Date), MONTH(t.Date)
-ORDER BY Year, Month;
-```
-# Acknowledgements
-This project was developed as part of IS 475. Special thanks to the team for their contributions:
-- Anabel Aguilar
-- Benjamin Oliphant
-- Meagan Timmons
-
-# Further Exploration
-This segment further explores the DBMS using MySQL, Python, and data visualization tools. The goal is to query, clean, and visualize data efficiently and
-compile graphs into a comprehensive PDF report. 
-
-# Project Highlights
-- Connected to a local MySQL server using the MySQL extention in VSCode.
-- Queried data into Pandas DataFrames for analysis and visualization.
-- Performed data cleaning to prepare datasets for visualization.
-- Created visualizations using Matplotlib.
-- Compiled graphs and results into a PDF report using FPDF.
+![Wash Type Comparison](https://github.com/user-attachments/assets/9def42b6-f0db-4215-b5e6-922abae7b7a4)
 
 
