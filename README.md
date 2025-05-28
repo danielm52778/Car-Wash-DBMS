@@ -58,3 +58,16 @@ This project was developed as part of IS 475. Special thanks to the team for the
 - Anabel Aguilar
 - Benjamin Oliphant
 - Meagan Timmons
+
+# Further Exploration
+This segment further explores the DBMS using MySQL, Python, and data visualization tools. The goal is to query, clean, and visualize data efficiently and
+compile graphs into a comprehensive PDF report. 
+
+# Project Highlights
+- Connected to a local MySQL server using the MySQL extention in VSCode.
+- Queried data into Pandas DataFrames for analysis and visualization.
+- Performed data cleaning to prepare datasets for visualization.
+- Created visualizations using Matplotlib.
+- Compiled graphs and results into a PDF report using FPDF.
+
+
