@@ -47,7 +47,7 @@ compile graphs into a PDF report.
 - Compiled graphs and results into a PDF report using FPDF.
 
 
-# Sample Queries
+# Sample Querie
 **Outputs the most popular service by year**
 ```
 SELECT 
